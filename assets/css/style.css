@@ -1,0 +1,36 @@
+/*====@font-face====*/
+@font-face {
+    font-family: 'quarkbold';
+    src: url('../font/quark-bold-webfont.woff2') format('woff2'),
+         url('../font/quark-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quarklight';
+    src: url('../font/quark-light-webfont.woff2') format('woff2'),
+         url('../font/quark-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*====Global====*/
+html{
+  font-family: 'quarkbold';
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'quarkbold';
+}
+/*====Body Section====*/
+body{
+  background-image: url(../img/Background-page.png);
+  background-size: cover;
+}
+.bar{
+  background-image: url(../img/bluebar.png);
+  background-size: cover;
+  height: 11%;
+}
+ul{
+  font-size: 1.5em;
+  font-family: 'quarkbold';
+}
