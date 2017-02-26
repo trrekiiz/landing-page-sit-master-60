@@ -72,46 +72,20 @@ li span{
 .stick-left { left: 0; }
 .stick-right { right: 0; }
 .stick-top { top: 0; }
-.stick-bottom { bottom: 0; }
+.stick-bottom { bottom: 7%; }
 
 @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 
-
-@media only screen and (min-device-width: 375px)  {
-    .bar{
-      height: 6%;
-    }
-    .content{
-      text-align: center;
-    }
-    .msc{
-      font-size: 1.5em;
-    }
-    .phd{
-      font-size: 1.5em;
-    }
-    .career{
-      font-size: 1.5em;
-    }
-    .msc h1{
-      font-size: 2em;
-    }
-    .phd h1{
-      font-size: 2em;
-    }
-    .career h1{
-      font-size: 2em;
-    }
-    .stick-bottom {
-      bottom: 1%;
-    }
+.button{
+  margin-top: 2%;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
   .bar{
     height: 6%;
+    right: 20%!important;
   }
   .content{
     text-align: center;
@@ -124,6 +98,7 @@ li span{
   }
   .career{
     font-size: 1.5em;
+    margin-top: 10%;
   }
   .msc h1{
     font-size: 2em;
@@ -135,7 +110,11 @@ li span{
     font-size: 2em;
   }
   .stick-bottom {
-    bottom: 1%;
+    bottom: 10%;
+  }
+  body{
+    background-image: url(../img/Background-mobile.png);
+    background-size: cover;
   }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
@@ -155,12 +134,65 @@ li span{
     bottom: 1%;
   }
   .msc{
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .phd{
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .career{
-    font-size: 1em;
+    font-size: 1.2em;
+  }
+  .content{
+    text-align: center;
+  }
+  .stick-bottom {
+    bottom: 10%;
+  }
+  body{
+    background-image: url(../img/Background-ipad.jpg);
+    background-size: cover;
+  }
+  .bar{
+    right: 15%!important;
+  }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .bar {
+    height: 9%;
+  }
+  .msc h1{
+    font-size: 2em;
+  }
+  .phd h1{
+    font-size: 2em;
+  }
+  .career h1{
+    font-size: 2em;
+  }
+  .stick-bottom {
+    bottom: -9%;
+  }
+  .msc{
+    font-size: 1.2em;
+  }
+  .phd{
+    font-size: 1.2em;
+  }
+  .career{
+    font-size: 1.2em;
+  }
+  .content{
+    text-align: center;
+  }
+  body{
+    background-image: url(../img/Background-ipad.jpg);
+    background-size: cover;
+  }
+  .bar{
+    right: 5%!important;
   }
 }
